@@ -6,7 +6,6 @@ export default function MenuCategory() {
   return (
     <div>
       {MenuData.map((menu) => {
-        console.log(MenuData);
         return (
           <div key={menu.id} className="menu-category-container">
             <div className={menu.backgroundColor}>
