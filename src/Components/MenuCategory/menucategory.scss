@@ -1,0 +1,97 @@
+@import "../../styles/partials/global";
+
+/* menu section */
+.menu-category-container {
+  display: flex;
+  flex-direction: column;
+  /* Menu Hot Drinks container */
+  &__hot-drinks {
+    @include hot-container;
+  }
+  &__hot-drinks--heading,
+  &__cold-drinks--heading,
+  &__pastries--heading {
+    font-weight: 100;
+    font-size: 3.75rem;
+    text-align: center;
+    color: #464646;
+    margin: 0px;
+    padding-top: 15px;
+  }
+  &__hot-drinks--type {
+    font-weight: 350;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 21px 0 15px 0;
+    color: #393939;
+  }
+  &__hot-drinks--description {
+    color: #393939;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    width: 24%;
+  }
+  &__hot-drinks--price {
+    text-align: center;
+    color: #5bacc3;
+    margin: 15px 0 0 0;
+    padding-bottom: 15px;
+  }
+  /* Cold Drinks Container */
+  &__cold-drinks {
+    @include cold-container;
+  }
+
+  &__cold-drinks--type {
+    font-weight: 350;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 21px 0 15px 0;
+    color: #393939;
+  }
+  &__cold-drinks--description {
+    color: #393939;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    width: 24%;
+  }
+  &__cold-drinks--price {
+    text-align: center;
+    color: #5bacc3;
+    margin: 15px 0 0 0;
+    padding-bottom: 15px;
+  }
+  /* Pastries Container */
+  &__pastries {
+    @include pastry-container;
+  }
+
+  &__pastries--type {
+    font-weight: 350;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 21px 0 15px 0;
+    color: #393939;
+  }
+  &__pastries--description {
+    color: #393939;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    width: 24%;
+  }
+  &__pastries--price {
+    text-align: center;
+    color: #5bacc3;
+    margin: 15px 0 0 0;
+    padding-bottom: 15px;
+  }
+}

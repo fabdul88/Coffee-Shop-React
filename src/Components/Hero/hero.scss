@@ -1,0 +1,70 @@
+@import "../../styles/partials/global";
+
+.hero-container {
+  background-color: $hero-background-color;
+
+  &__sub-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__hero-info-container {
+    margin: 320px 0 0 190px;
+    width: 25%;
+  }
+  &__title {
+    font-weight: 100;
+    font-size: 70px;
+    color: #393939;
+    margin: 0px;
+  }
+  &__definition {
+    box-sizing: border-box;
+    width: 590px;
+    font-size: 28px;
+    font-weight: 100;
+    color: #393939;
+    margin: 18px 0 28px 0;
+  }
+  /* Header "Shop Now" Link and Button */
+  &__shop-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5bacc3;
+    position: relative;
+    height: 55px;
+    width: 180px;
+    /* Header title, definition and button section */
+    &:active {
+      border: 2px solid #000;
+    }
+  }
+  &__link {
+    font-size: 25px;
+    padding: 10px 0 0 0;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  &__button-border {
+    width: 180px;
+    height: 55px;
+    border: 2px solid black;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    &:active {
+      z-index: -1;
+      width: 180px;
+      height: 55px;
+      border: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  /* Header Hero-Image */
+  &__image-container {
+    height: 34.25rem;
+    margin: 250px 130px 115px 0;
+  }
+}

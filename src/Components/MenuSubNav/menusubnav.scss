@@ -1,0 +1,28 @@
+@import "../../styles/partials/global";
+
+/* Sub Navigation Section */
+.sub-navigation {
+  @include sub-nav-container;
+  &__menu {
+    margin: 0px;
+    padding: 21px;
+  }
+  &__menu-item {
+    padding: 4px 15px 4px 0px;
+    display: inline-block;
+  }
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+    width: 4px;
+  }
+  &__link:hover {
+    color: #5bacc3;
+    text-shadow: 2px 2px 5px #5bacc3;
+    transition: 0.3s;
+  }
+  &__left-border {
+    border-left: 3px solid #5bacc3;
+    padding: 2px 20px 2px 0px;
+  }
+}

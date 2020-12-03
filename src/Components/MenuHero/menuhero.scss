@@ -1,0 +1,40 @@
+@import "../../styles/partials/global";
+
+/* Hero Image and Heading Section-*/
+.menu-hero-container {
+  background-image: url("../../assets/coffee-circle.jpg");
+  width: 90rem;
+  height: 35.9375rem;
+  min-width: 10%;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  &__heading {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    font-size: 3.75rem;
+    width: 17.8125rem;
+    max-width: 17.8125rem;
+    height: 11.5625rem;
+    text-align: center;
+    background-color: rgba(57, 57, 57, 0.95);
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25rem;
+    margin: auto;
+  }
+  &__heading-border {
+    position: absolute;
+    border: 4px solid #5bacc3;
+    width: 17.8125rem;
+    height: 11.5625rem;
+    left: -25px;
+    top: -25px;
+  }
+}

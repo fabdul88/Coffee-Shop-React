@@ -1,0 +1,45 @@
+@import "../../styles/partials/global";
+
+.nav-container {
+  &__main-nav {
+    @include nav;
+  }
+  &__logo-container {
+    width: 250px;
+  }
+
+  &__main-logo {
+    margin: 25px 0 0 40px;
+    vertical-align: text-bottom;
+  }
+  &__nav-name {
+    @include nav-name;
+  }
+  &__menu {
+    @include nav-menu;
+  }
+  &__menu-item {
+    margin: 0px;
+  }
+  &__center-menu {
+    margin: 0 50px;
+  }
+  &__menu-item-link {
+    text-decoration: none;
+    color: #464646;
+    font-size: 1.3125rem;
+    &:hover {
+      color: #5bacc3;
+      text-shadow: 2px 2px 5px #5bacc3;
+      transition: 0.3s;
+    }
+  }
+  &__menu-item-active {
+    color: #5bacc3;
+  }
+}
+
+//   &__menu-item > a.item-active {
+//     color: #5bacc3;
+//   }
+// }

@@ -1,0 +1,116 @@
+@import "../../styles/partials/global";
+
+.products-container {
+  /*cards*/
+  /* Cards Title Container */
+  &__title-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f7f7f7;
+  }
+  &__title {
+    padding: 50px;
+    margin: 0px;
+    font-size: 60px;
+    font-weight: 100;
+    color: #393939;
+  }
+  /* All Cards Container */
+  &__cards-container {
+    // @include cards;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f7f7f7;
+  }
+  &__card {
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 473px;
+    width: 365px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 1.8rem;
+    margin: 0 40px 0 40px;
+  }
+  &__card-image {
+    height: 14.8rem;
+    margin-top: 1.8rem;
+  }
+  &__information {
+    width: 365px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff0ed;
+    height: 205px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  &__card-description {
+    font-weight: 400;
+    font-size: 38px;
+    color: #000;
+    margin: 38px 0 10px 0;
+  }
+  &__quantity {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 240px;
+    color: #464646;
+    margin: 16px 0 16px 20px;
+  }
+  &__card-price {
+    display: inline-flex;
+    align-items: center;
+    color: #5bacc3;
+    font-size: 43px;
+    font-weight: bold;
+    margin: 43px 0;
+  }
+  &__card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  /* "View All button Section" */
+  &__button-main {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    padding: 50px 0 50px;
+  }
+  &__sub-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5bacc3;
+    position: relative;
+    height: 55px;
+    width: 180px;
+    &:active {
+      border: 2px solid #000;
+    }
+  }
+  &__button-link {
+    font-size: 25px;
+    padding: 10px 0 0 0;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  &__button-border {
+    width: 180px;
+    height: 55px;
+    border: 2px solid black;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    &:active {
+      z-index: -1;
+      width: 180px;
+      height: 55px;
+      border: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../styles/partials/global";
+
+/* Footer Container Section */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #393939;
+  background-color: #fff0ed;
+  position: relative;
+  padding: 70px 0 90px 0;
+  &__sub-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1267px;
+  }
+  &__address-container {
+    margin: 0;
+  }
+  &__address-container-heading {
+    font-weight: 100;
+    font-size: 33px;
+    text-align: left;
+  }
+  &__address-container-location {
+    font-size: 21px;
+    text-align: left;
+    margin: 0px;
+  }
+  &__hours-container {
+    margin: 0;
+  }
+  &__hours-container-heading {
+    font-weight: 100;
+    font-size: 33px;
+    text-align: left;
+  }
+  &__hours-container-information {
+    font-size: 21px;
+    text-align: left;
+    margin: 0px;
+  }
+  &__hours-container-day {
+    font-weight: bold;
+  }
+  &__footer-social {
+    position: relative;
+    margin: 0;
+  }
+  &__left-bean {
+    height: 120px;
+    position: absolute;
+    left: 110px;
+    top: 15px;
+  }
+  &__footer-social-heading {
+    font-weight: 100;
+    font-size: 33px;
+    text-align: left;
+  }
+  &__footer-social-link-icon {
+    height: 3.1rem;
+    margin: 0 2px 0 2px;
+  }
+  &__right-bean {
+    position: absolute;
+    height: 120px;
+    top: 110px;
+    left: 300px;
+  }
+}
