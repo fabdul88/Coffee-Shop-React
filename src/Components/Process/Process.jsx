@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./process.scss";
 import PlantingIcon from "../../assets/planting-icon.png";
 import CoffeeBeansIcon from "../../assets/2-coffee-beans-icon.png";
@@ -36,13 +37,10 @@ export default function Process() {
         {/* coffee process "Learn More" button Section  */}
 
         <div className="coffee-process-container__learn-more-container">
-          <a
-            className="coffee-process-container__link"
-            href="./pages/menu.html"
-          >
+          <Link className="coffee-process-container__link" to="/menu">
             LEARN MORE
             <div className="coffee-process-container__button-border"></div>
-          </a>
+          </Link>
         </div>
       </div>
 
