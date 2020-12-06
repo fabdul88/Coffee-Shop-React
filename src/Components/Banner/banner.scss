@@ -4,14 +4,18 @@
 .banner-container {
   display: flex;
   justify-content: center;
-  margin: 200px 0;
+  // margin: 200px 0;
+  margin: 80px 0;
   &__information {
+    max-width: 1267px;
+    width: 93.75vw;
+    margin: 0 10px;
     background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
     font-size: 50px;
     text-align: center;
-    width: 1267px;
-    margin: 0;
+    // width: 1267px;
+    // margin: 0;
     padding: 68.8px 0;
     animation: flash linear 2.5s infinite;
     @keyframes flash {

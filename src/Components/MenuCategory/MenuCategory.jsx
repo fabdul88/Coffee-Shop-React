@@ -26,7 +26,7 @@ export default function MenuCategory() {
 
               <p className="menu-category-container__hot-drinks--price menu-category-container__cold-drinks--price menu-category-container__pastries--price">
                 {/* using ToFixed() method for number, to add a zero after the price decimal. */}
-                {menu.price.toFixed(2)}
+                ${menu.price.toFixed(2)}
               </p>
 
               <h3 className="menu-category-container__hot-drinks--type menu-category-container__cold-drinks--type menu-category-container__pastries--type">
@@ -39,7 +39,7 @@ export default function MenuCategory() {
 
               <p className="menu-category-container__hot-drinks--price menu-category-container__cold-drinks--price menu-category-container__pastries--price">
                 {/* using ToFixed() method for number, to add a zero after the price decimal. */}
-                {menu.priceTwo.toFixed(2)}
+                ${menu.priceTwo.toFixed(2)}
               </p>
             </div>
           </div>
